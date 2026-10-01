@@ -2,6 +2,6 @@ services:
   - type: web
     name: m3u8-to-mkv
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: buildCommand: ./build.sh
     startCommand: gunicorn app:app
     plan: free
