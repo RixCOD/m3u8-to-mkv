@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>M3U8 Downloader</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+margin-top:80px;
+}
+
+input,textarea{
+width:500px;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:12px 25px;
+font-size:16px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>M3U8 to MKV Downloader</h1>
+
+<form
+action="/download"
+method="post"
+enctype="multipart/form-data">
+
+<div>
+<input
+type="text"
+name="m3u8_url"
+placeholder="Direct M3U8 URL">
+</div>
+
+<div>
+<input
+type="file"
+name="m3u8_file"
+accept=".m3u8">
+</div>
+
+<div>
+<input
+type="text"
+name="base_url"
+placeholder="Base URL for relative segments">
+</div>
+
+<button type="submit">
+Download MKV
+</button>
+
+</form>
+
+</body>
+</html> 
